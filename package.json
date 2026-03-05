@@ -1,0 +1,31 @@
+{
+  "name": "insider-trading-explorer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "tsx --test tests/**/*.test.ts",
+    "import:form4": "node scripts/import-form4.mjs",
+    "extract:sec": "node scripts/extract-sec-form4.mjs"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.56.1",
+    "next": "^15.3.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "eslint": "^9.22.0",
+    "eslint-config-next": "^15.3.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
